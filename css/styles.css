@@ -122,3 +122,43 @@ body {
     color: white;
     margin-top: 30px;
 }
+
+
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #0056b3;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-top: 40px;
+}
+
+.service-card, .testimonial-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.service-card:hover, .testimonial-card:hover {
+    transform: scale(1.02);
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
