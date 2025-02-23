@@ -1,0 +1,12 @@
+[
+    {
+        "titre": "Audit énergétique copropriété",
+        "description": "Évaluation des performances énergétiques des bâtiments et recommandations d’amélioration.",
+        "image": "static/images/audit.jpg"
+    },
+    {
+        "titre": "Optimisation des systèmes de chauffage",
+        "description": "Amélioration de l’efficacité des installations pour réduire la consommation.",
+        "image": "static/images/chauffage.jpg"
+    }
+]
