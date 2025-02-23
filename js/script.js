@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Charger les services
-    fetch("/services")
+    // Charger les services depuis le fichier JSON
+    fetch("data/services.json")
         .then(response => response.json())
         .then(data => {
             let servicesDiv = document.getElementById("services");
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
     // Charger les témoignages
-    fetch("/testimonials")
+    fetch("data/testimonials.json")
         .then(response => response.json())
         .then(data => {
             let testimonialsDiv = document.getElementById("testimonials");
