@@ -17,7 +17,7 @@ body {
 }
 
 .navbar .logo {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -136,10 +136,10 @@ body {
     grid-template-columns: 1fr;
     grid-gap: 20px;
     padding: 20px;
-    max-width: 1100px;
     margin: auto;
-    background-image: url('../images/energie1.jpg');
-    background-size: cover;
+    background-image: url('../images/energie1.jpg') ;
+    width: 1365px;
+    
 }
 
 /* Section "Bienvenue" */
