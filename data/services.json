@@ -5,8 +5,13 @@
         "image": "./images/aa.jpg"
     },
     {
-        "titre": "Optimisation des systèmes de chauffage",
-        "description": "Amélioration de l’efficacité des installations pour réduire la consommation.",
+        "titre": "Audit bâtiment tertiaire",
+        "description": "Optimisation des performances énergétiques des bureaux et entreprises.",
+        "image": "./images/aa.jpg"
+    },
+    {
+        "titre": "Audit industriel",
+        "description": "Diagnostic détaillé pour réduire les consommations d’énergie des industries.",
         "image": "./images/aa.jpg"
     }
 ]

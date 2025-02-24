@@ -1,19 +1,17 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Charger les services depuis le fichier JSON
+    // Charger les services
     fetch("data/services.json")
         .then(response => response.json())
         .then(data => {
-            let servicesDiv = document.getElementById("services");
+            let servicesGrid = document.getElementById("services-grid");
             data.forEach(service => {
                 let serviceHTML = `
-                    <div class="col-md-4">
-                        <div class="service-card">
-                            <h3>${service.titre}</h3>
-                            <p>${service.description}</p>
-                            <img src="${service.image}" alt="${service.titre}">
-                        </div>
+                    <div class="service-card">
+                        <img src="${service.image}" alt="${service.titre}" width="100%">
+                        <h3>${service.titre}</h3>
+                        <p>${service.description}</p>
                     </div>`;
-                servicesDiv.innerHTML += serviceHTML;
+                servicesGrid.innerHTML += serviceHTML;
             });
         });
 
@@ -21,21 +19,14 @@ document.addEventListener("DOMContentLoaded", function() {
     fetch("data/testimonials.json")
         .then(response => response.json())
         .then(data => {
-            let testimonialsDiv = document.getElementById("testimonials");
+            let testimonialsGrid = document.getElementById("testimonials-grid");
             data.forEach(t => {
                 let testimonialHTML = `
-                    <div class="col-md-6">
-                        <div class="testimonial-card">
-                            <p>"${t.commentaire}"</p>
-                            <strong>- ${t.nom}</strong>
-                        </div>
+                    <div class="testimonial-card">
+                        <p>"${t.commentaire}"</p>
+                        <strong>- ${t.nom}</strong>
                     </div>`;
-                testimonialsDiv.innerHTML += testimonialHTML;
+                testimonialsGrid.innerHTML += testimonialHTML;
             });
         });
 });
-
-function toggleMenu() {
-    let navLinks = document.querySelector(".nav-links");
-    navLinks.classList.toggle("active");
-}
