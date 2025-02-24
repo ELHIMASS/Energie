@@ -186,6 +186,28 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #007bff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
 
 
 

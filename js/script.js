@@ -30,3 +30,9 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         });
 });
+
+function toggleMenu() {
+    let navLinks = document.querySelector(".nav-links");
+    navLinks.classList.toggle("active");
+}
+
